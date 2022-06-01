@@ -1,8 +1,8 @@
 // 7 types js
-console.log('7 types js')
+console.log('8 types js')
 console.table(
 	{
-		value: [null, undefined, true, 10, 'some text', {}, Symbol("js")],
+		value: [null, undefined, true, 10, 'some text', {}, Symbol("js"), 3n],
 		type: [
 			typeof (null),
 			typeof (undefined),
@@ -10,7 +10,8 @@ console.table(
 			typeof (10),
 			typeof ('string'),
 			typeof ({}),
-			typeof (Symbol('js'))
+			typeof (Symbol('js')),
+			typeof (3n)
 		],
 		'not type': [
 			typeof (function () { }),
